@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-tw" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            color: #495563;
+        }
+        h4{
+            text-decoration: underline;
+            text-align: center;
+        }
+        footer{
+            margin-top: 40px;
+        }
+        footer p{
+            color: red;
+            line-height: 24px;
+        }
+        #confirmationLink {
+            text-decoration: underline;
+            color: #495563;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h4>衛生福利部部長信箱-確認通知信</h4>
+    </div>
+    <div class="content">
+        <p>
+            親愛的 {{name}} 先生/小姐您好：
+        </p>        
+        <p>
+            感謝您的來信，為確保您的電子信箱未遭他人誤用（或冒用），並可收到本部回覆信，請您點選來信確認，完成確認後，我們會立即將您的案件排入處理流程。（如未點選來信確認，系統將不予受理）。
+        <br />
+            如果您未寫信至衛生福利部，有可能是他人誤用（或冒用）您的電子信箱，請毋須理會本確認通知信，直接除即可，我們將不會進行後續處理。請您點選下方連結完成確認
+        </p>
+    </div>
+    <div>
+        <a href="{{confirmationLink}}">來信確認</a>
+    </div>
+    <footer>
+        <p>
+            若無連結可以點選，請完整複製下方URL 超連結，不要有空白或斷行，並貼於瀏整器上執行
+            <br />
+            <span id="confirmationLink">
+                {{confirmationLink}}
+            </span>
+        </p>        
+    </footer>
+        
+</body>
+</html>

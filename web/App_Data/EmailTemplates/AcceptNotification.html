@@ -1,0 +1,99 @@
+﻿<!--
+    案件受理通知信
+-->
+<!DOCTYPE html>
+<html lang="zh-tw" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            color: #495563;
+        }
+        div.mainTitle h4{
+            text-align: center;
+            text-decoration: underline;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border: 3px solid;
+            width: 80%;
+            table-layout: fixed;
+            overflow-wrap: break-word;
+        }
+        thead {
+            background-color: #eff3ff;
+        }
+        th{
+            height: 60px;
+        }
+        th,td{
+            border: 1px solid;
+        }
+        tbody tr{
+            height: 60px;
+            text-align:center;
+        }
+        .appealNo{
+            width: 18%;
+        }
+        .appealScrt{
+            width: 13%;
+        }
+        .name {
+            width: 30px;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        .subject{
+            width: 30%;
+        }
+        .footer{
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .footer .tip{
+            text-align:center;
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+        .footer #no-reply{
+            margin-top: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainTitle">
+        <h4>衛生福利部部長信箱-案件受理通知信</h4>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th class="appealNo">案件編號</th>
+                <th>來信時間</th>
+                <th class="title name">姓名</th>
+                <th>案件類別</th>
+                <th class="subject">主旨</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="appealNo">{{AppealNo}}</td>
+                <td>{{ReceiveDate}}</td>
+                <td class="title name">{{Name}}</td>
+                <td>{{CaseCategory}}</td>
+                <td class="subject">{{Subject}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="footer">
+        <p class="tip">在您查詢案件處理狀態時，必須輸入正確之「案件編號」，請妥善保留此封通知信。</p>
+        <p>
+            查詢案件處理狀態網址：
+        </p>
+        <a href="#">查詢信件網址</a>
+        <p id="no-reply">本封信件由系統自動發送，請勿回覆本信件！</p>
+    </div>
+</body>
+</html>

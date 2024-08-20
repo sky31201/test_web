@@ -1,0 +1,13 @@
+### Three# work as single-line comment
+### Any line starts with ### will be ignored
+### 
+### {{Eyno}} is required. Executive Yuan Appeal Number.
+###
+Dear Sir/Madame:
+The Email you sent to the Premier at the website of the Executive Yuan, Republic of China (Taiwan) is well received. Your case [{{EyNo}}] is forwarded to the Ministry of Health and Welfare. Our reply is.....
+
+
+
+Thank you for your message. 
+
+Ministry of Health and Welfare, Republic of China (Taiwan)

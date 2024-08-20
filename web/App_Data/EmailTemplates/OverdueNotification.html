@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-tw" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <style>
+        .mainTitle {
+            color: #495563;
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        .mainTitle h4 {
+            margin: 5px;
+        }
+
+        table {
+            border: 5px double;
+            width: 100%;
+            table-layout: fixed;
+            overflow-wrap: break-word;
+        }
+
+        .title {
+        }
+
+        th {
+            padding-right: 7px;
+            color: #5a2e1e;
+            background-color: #f2edda;
+            width: 160px;
+            height: 40px;
+            text-align: right;
+        }
+
+        td {
+            color: #495563;
+            padding-left: 7px;
+        }
+
+        #contents {
+            margin-top: 7px;
+            margin-bottom: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainTitle">
+        <h4>衛生福利部部長信箱-案件逾期通知</h4>
+    </div>
+    <table>
+        <tr>
+            <th>
+                <span class="title">案件編號</span>
+            </th>
+            <td>
+                <span class="content" id="appealNo">{{appealNo}}</span>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <span class="title">申訴民眾姓名</span>
+            </th>
+            <td>
+                <span class="content" id="name">{{name}}</span>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <span class="title">案件主旨</span>
+            </th>
+            <td>
+                <span class="content" id="subject">{{subject}}</span>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <span class="title">申請內容</span>
+            </th>
+            <td>
+                <div class="content" id="contents">
+                    {{contents}}
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <span class="title">案件時間</span>
+            </th>
+            <td>
+                <span class="content" id="ReceivedDate">{{ReceivedDate}}</span>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <span class="title">限辦時間</span>
+            </th>
+            <td>
+                <span class="content" id="deadline">{{deadline}}</span>
+            </td>
+        </tr>        
+    </table>
+    <script>
+    </script>
+</body>
+</html>

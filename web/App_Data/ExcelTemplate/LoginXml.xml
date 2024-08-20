@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:si="http://soapinterop.org/xsd">
+  <SOAP-ENV:Body>
+    <ns1:chkidnoResponse xmlns:ns1="http://tempuri.org">
+      <ID xsi:type="xsd:string">user01</ID>
+      <EPNO xsi:type="xsd:string">111111</EPNO >
+        <DPNO xsi:type="xsd:string">1052</DPNO>
+        <DPNAME xsi:type="xsd:string">綜合規劃司</DPNAME>
+        <SUCCESS xsi:type="xsd:string">1</SUCCESS>
+      </ns1:chkidnoResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-tw" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />    
+    <style>
+        .main-title {
+            color: #495563;
+            text-decoration: underline;
+            text-align: center;
+        }
+        .main-title  h4 {
+            margin: 5px;
+            text-align: center;
+        }
+        table {
+            border: 5px double;
+            width: 100%;
+            table-layout: fixed;
+            overflow-wrap: break-word;
+        }
+        .title {
+        }
+        th {
+            padding-right: 7px;
+            color: #5a2e1e;
+            background-color: #f2edda;
+            width: 160px;
+            height: 40px;
+            text-align: right;
+        }
+        td {
+            color: #495563;
+            padding-left: 7px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-title">
+        <h4>衛生福利部部長信箱-回覆通知信</h4>
+    </div>
+    <div class="reply-contents">
+        <div>
+            {{replyContent}}
+        </div>
+        <p>如有疑問，請聯絡［{{dept}}　{{RName}}　{{RPhone}}］</p>
+        <p>{{replyStatement}}</p>
+        <p>
+            備註：<br />
+            關於您所來信資料如下
+        </p>
+        <div class="AppealInfo">
+            <table >
+                <tr>
+                    <th>
+                        <span class="title">案件編號</span>
+                    </th>
+                    <td>
+                        <span class="content">{{appealNo}}</span>                        
+                    </td>
+                </tr>
+                <!--<tr>
+                    <th>
+                        <span class="title">案件密碼</span>
+                    </th>
+                    <td>
+                        <span class="content">{{appealScrt}}</span>                        
+                    </td>
+                </tr>-->
+                <tr>
+                    <th>
+                        <span class="title">姓名</span>
+                    </th>
+                    <td>
+                        <span class="content">{{name}}</span>                        
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <span class="title">案件主旨</span>
+                    </th>
+                    <td>
+                        <span class="content">{{subject}}</span>                        
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <span class="title">來信時間</span>
+                    </th>
+                    <td>
+                        <span class="content">{{receiveDate}}</span>                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

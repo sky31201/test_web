@@ -1,0 +1,12 @@
+### Three# work as single-line comment
+### Any line starts with ### will be ignored
+### 
+### {{PresidentNo}} is required. President Appeal Number.
+###
+Dear Sir/Madame:
+The Email you sent to the President is well received (No. {{PresidentNo}}). Your mail is forwarded to the Ministry of Health and Welfare by the Executive Yuan. Our reply is.....
+
+
+
+Thank you for your message. 
+Ministry of Health and Welfare, Republic of China (Taiwan)
